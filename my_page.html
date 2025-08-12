@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayan's - Developer Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
+
+        <!-- Header/Hero Section -->
+        <header class="flex flex-col-reverse md:flex-row items-center justify-between mb-16">
+            <!-- Text Content -->
+            <div class="text-center md:text-left mt-8 md:mt-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-800">Sayan Mukherjee</h1>
+                <p class="text-lg text-slate-600 mt-2">Exploring the magic of Machine Learning</p>
+                <div class="mt-6 flex space-x-4 justify-center md:justify-start">
+                    <a href="https://github.com/Thedrogon"
+                        class="text-slate-500 hover:text-indigo-600 transition-colors duration-300"
+                        aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/sayanjit-mukherjee/"
+                        class="text-slate-500 hover:text-indigo-600 transition-colors duration-300"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://leetcode.com/u/Thedrogon/"
+                        class="text-slate-500 hover:text-indigo-600 transition-colors duration-300"
+                        aria-label="LeetCode"><i class="fas fa-code fa-2x"></i></a>
+                </div>
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="#contact"
+                        class="bg-accent text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto text-center">
+                        Get In Touch
+                    </a>
+                    <a href="./assets/Modern_Resume.pdf" download="Sayanjit-Resume.pdf"
+                        class="text-indigo-600 border border-indigo-600 font-bold py-3 px-6 rounded-lg hover:bg-indigo-50 transition-all duration-300 w-full sm:w-auto text-center">
+                        Download Resume <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Profile Picture -->
+            <div id="profile-pic" class="flex-shrink-0 h-50 w-50 md:h-60 md:w-60  shadow-lg border-4 border-white"
+                oncontextmenu="return false;">
+                <!-- The image is now a background, making it harder to save -->
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6">About Me</h2>
+            <div class="text-slate-600 space-y-4 max-w-3xl text-base md:text-lg leading-relaxed">
+                <p>
+                    Hello! I'm Sayan, a passionate Software Engineer with a knack for building Machine Learning models
+                    for beautiful and functional user-centric web applications.
+                </p>
+                <p>
+                    As a final-year student passionate about machine learning, I focus on the practical data to model
+                    pipeline. I use Python, Pandas, and NumPy to efficiently clean, wrangle, and prepare data. From
+                    there, I leverage Scikit-learn to build and evaluate predictive models that solve real-world
+                    problems. I'm a dedicated and fast learner, eager to apply my skills and contribute to a team as an
+                    intern.
+                </p>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8">My Tech Stack</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-slate-100">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <i class="fas fa-code mr-3 text-indigo-500"></i>
+                        Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Golang</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Java</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-slate-100">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <i class="fas fa-cubes mr-3 text-indigo-500"></i>
+                        Frameworks & Libraries
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Flask</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Numpy</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Pandas</span>
+                        <span
+                            class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Pytorch</span>
+                        <span
+                            class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">PySpark</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Scikit
+                            Learn</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="bg-white p-6 rounded-lg shadow-lg border border-slate-100">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <i class="fas fa-tools mr-3 text-indigo-500"></i>
+                        Tools & Platforms
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Git &
+                            GitHub</span>
+                        <span
+                            class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">TensorFlow</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Kaggle</span>
+                        <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">Keras</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8">My Projects</h2>
+
+            <!-- Project Grid -->
+            <!-- The "md:items-start" class is added here to fix the alignment issue -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:items-start">
+
+                <!-- Project 1 -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-lg border border-slate-250 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">E-commerce Platform</h3>
+                    <p class="text-slate-600 mb-4">A full-featured online store with product management, user
+                        authentication, and a Stripe payment gateway.</p>
+
+                    <!-- Hidden Details -->
+                    <div id="details-1" class="hidden text-slate-600 mb-4">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Implemented RESTful API for product and user data.</li>
+                            <li>Integrated Stripe for secure payment processing.</li>
+                            <li>Designed a responsive and intuitive user interface.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-auto">
+                        <div class="flex space-x-4 mb-4">
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">Live Demo <i
+                                    class="fas fa-external-link-alt ml-1"></i></a>
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">GitHub <i
+                                    class="fab fa-github ml-1"></i></a>
+                        </div>
+                        <button data-target="#details-1"
+                            class="toggle-details-btn text-indigo-600 font-semibold w-full text-left">
+                            View Details <i class="fas fa-chevron-down ml-1 transition-transform duration-300"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-lg border border-slate-250 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">Task Management App</h3>
+                    <p class="text-slate-600 mb-4">A sleek and intuitive to-do list application with drag-and-drop
+                        functionality and real-time collaboration.</p>
+
+                    <!-- Hidden Details -->
+                    <div id="details-2" class="hidden text-slate-600 mb-4">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Used Firebase for real-time database and authentication.</li>
+                            <li>Implemented drag-and-drop for task reordering.</li>
+                            <li>Ensured seamless collaboration between multiple users.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-auto">
+                        <div class="flex space-x-4 mb-4">
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">Live Demo <i
+                                    class="fas fa-external-link-alt ml-1"></i></a>
+                            <a href="#" class="text-indigo-600 font-semibold hover:underline">GitHub <i
+                                    class="fab fa-github ml-1"></i></a>
+                        </div>
+                        <button data-target="#details-2"
+                            class="toggle-details-btn text-indigo-600 font-semibold w-full text-left">
+                            View Details <i class="fas fa-chevron-down ml-1 transition-transform duration-300"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Add more project cards here following the same structure -->
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Let's Connect</h2>
+            <p class="text-center text-slate-600 max-w-xl mx-auto mb-10">
+                I'm currently available for both interning and full time opportunities. Feel free to send me a message,
+                and I'll get back to you as soon as possible!
+            </p>
+            <div class="max-w-xl mx-auto text-center">
+                <a href="mailto:aec.sayanjitmukherjee@gmail.com"
+                    class="bg-accent text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:bg-indigo-700 transition-all duration-300 transform hover:-translate-y-1 inline-block">
+                    Say Hello
+                </a>
+                <p class="mt-6 text-slate-500">or email me at <a href="mailto:aec.sayanjitmukherjee@gmail.com"
+                        class="text-indigo-600 hover:underline">aec.sayanjitmukherjee@gmail.com</a></p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-8">
+        <p class="text-slate-500">&copy; 2025 Sayan-Jit Mukherjee. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle project details visibility
+        const detailToggleButtons = document.querySelectorAll('.toggle-details-btn');
+
+        detailToggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                const details = document.querySelector(targetId);
+                const icon = button.querySelector('i');
+
+                if (details) {
+                    const isHidden = details.classList.toggle('hidden');
+
+                    // Update button text and icon rotation
+                    if (isHidden) {
+                        button.innerHTML = 'View Details <i class="fas fa-chevron-down ml-1 transition-transform duration-300"></i>';
+                    } else {
+                        button.innerHTML = 'Hide Details <i class="fas fa-chevron-up ml-1 transition-transform duration-300"></i>';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

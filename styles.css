@@ -1,0 +1,55 @@
+ /* Custom styles for the portfolio */
+        :root{
+            --sweet_color-- :#EE4B2B
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A very light gray */
+            color: #1e293b; /* Slate 800 */
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .accent-color {
+            color: var(--sweet_color--); /* Indigo 700 */
+        }
+        .bg-accent {
+            background-color: var(--sweet_color--); /* Indigo 700 */
+        }
+        /* CSS for profile picture to prevent easy saving */
+        #profile-pic {
+            background-image: url('./assets/good\ pic.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+        }
+        /* Custom scrollbar for horizontal sections */
+        .horizontal-scroll-container {
+            scrollbar-width: thin;
+            scrollbar-color: #a5b4fc #e0e7ff;
+        }
+        .horizontal-scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .horizontal-scroll-container::-webkit-scrollbar-track {
+            background: #e0e7ff; /* Indigo 200 */
+            border-radius: 10px;
+        }
+        .horizontal-scroll-container::-webkit-scrollbar-thumb {
+            background-color: #a5b4fc; /* Indigo 400 */
+            border-radius: 10px;
+            border: 2px solid #e0e7ff;
+        }
+        .project-card {
+            flex: 0 0 90%; /* On small screens, card takes 90% width */
+        }
+        @media (min-width: 768px) {
+            .project-card {
+                flex: 0 0 45%; /* On medium screens, 2 cards visible */
+            }
+        }
+        @media (min-width: 1024px) {
+            .project-card {
+                flex: 0 0 30%; /* On large screens, 3 cards visible */
+            }
+        }
